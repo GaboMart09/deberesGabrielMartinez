@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+</head>
+ 
+<body>
+ 
+    <script>
+        
+        function multiplo(valor,multiplo)
+        {
+            total = valor % multiplo;
+            if(total==0)
+                return true;
+            else
+                return false;
+        }
+ 
+        // Arrays que contendran los valores multiples del 3 y del 5
+        var multiplos_3=[];
+        var multiplos_5=[];
+ 
+        // bucle del 1 al 100
+        for(var i=1;i<=1000;i++)
+        {
+            if(multiplo(i,3))
+                multiplos_3.push(i);
+ 
+            if(multiplo(i,5))
+                multiplos_5.push(i);
+        }
+        document.write("Los multiplos de 3 son: ",multiplos_3);
+        
+        document.write("<br>Los multiplos de 5 son: ",multiplos_5);
+    </script>
+ 
+</body>
+</html>

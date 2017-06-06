@@ -1,0 +1,27 @@
+package Deber;
+
+import java.util.Scanner;
+
+public class Multiplos {
+       public static void main(String[] args) {
+            String submultiplos = "";
+        int numero;
+        int total;
+        int mutiplo=0;
+        System.out.print("Ingrese el multiplo: ");
+                
+        numero = (new Scanner(System.in)).nextInt();
+         System.out.println("Ingrese un maximo: ");
+                total = (new Scanner(System.in)).nextInt();
+
+        for(int i=numero; i <= total; i++){
+            if(i%numero == 0){
+                submultiplos = submultiplos + Integer.toString(i) + " ";
+                mutiplo = mutiplo + i;
+            }
+        }
+        System.out.println("El numero " + numero + " es multiplo de: " +
+                         mutiplo);
+        System.out.println("La suma es: " + mutiplo);    
+       }
+}
